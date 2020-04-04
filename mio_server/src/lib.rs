@@ -47,7 +47,7 @@ struct AppOptions {
     push: Option<PushOptions>,
 }
 
-fn main() {
+pub fn run_server() {
     let app_options = get_app_options();
 
     let address = "0.0.0.0:1935".parse().unwrap();
